@@ -1,0 +1,83 @@
+.koach__possibility {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Add this line to vertically center align items */
+  }
+  
+  .koach__possibility-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .koach__possibility-image img {
+    width: 100%;
+    height: auto; /* Change height to 'auto' for responsive resizing */
+  }
+  
+  .koach__possibility-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .koach__possibility-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+    margin-top: 0; /* Remove the default top margin */
+    margin-bottom: 1rem; /* Add margin bottom for spacing */
+  }
+  
+  .koach__possibility-content h4:last-child {
+    color: #ff8A71;
+  }
+  
+  .koach__possibility-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 41px;
+    line-height: 45px;
+    margin: 0; /* Remove the top margin to align with the heading above */
+    margin-bottom: 1rem; /* Add margin bottom for spacing */
+  }
+  
+  .koach__possibility-content p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .koach__possibility {
+      flex-direction: column;
+    }
+  
+    .koach__possibility-image {
+      margin: 1rem 0;
+    }
+  
+    .koach__possibility-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .koach__possibility-content {
+      margin-top: 0rem;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .koach__possibility-image img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
